@@ -3,7 +3,7 @@
     <body>
         <h1>Students</h1>
         <table>
-            <thead><tr><th> Id </th><th> Last Name </th><th> First Name </th><th> Age </th><th> Favorit Chips </th></tr></thead>
+            <thead><tr><th> Id </th><th> Last Name </th><th> First Name </th><th> Age </th><th> Member type</th> <th> Favorit Chips </th></tr></thead>
             <tbody>
                 {% for st in stdata%}
                 <tr>
@@ -12,6 +12,7 @@
                     <td>{{st[2]}}</td>
                     <td>{{st[3]}}</td>
                     <td>{{st[4]}}</td>
+                    <td>{{st[5]}}</td>
                 </tr>
                 {% endfor %}
             </tbody>
